@@ -1,0 +1,135 @@
+/* Base styles and dark theme background */
+body {
+    background-color: #242526;
+    color: #e4e6eb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Dashboard Header Styling */
+.dashboard-header {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.dashboard-header h1 {
+    color: #5cdb95; /* Accent green color */
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+/* Navigation Links */
+.nav-links {
+    font-size: 0.9rem;
+    color: #b0b3b8;
+}
+
+.nav-links a {
+    color: #5cdb95;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Subheading & Search Section */
+.menu-section {
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 40px;
+}
+
+.menu-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+/* Centered Input/Search box style */
+.search-bar {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 15px;
+    border: 1px solid #3a3b3c;
+    border-radius: 6px;
+    background-color: #3a3b3c;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    text-align: center;
+}
+
+.search-bar:focus {
+    border-color: #5cdb95;
+}
+
+/* Responsive Grid Layout for Menu Cards */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* Individual Item Card Styling */
+.menu-card {
+    background-color: #2f3031;
+    border: 1px solid #3e4042;
+    border-radius: 12px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    border-color: #5cdb95;
+}
+
+/* Inside Card Text Layout */
+.menu-card h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+
+.menu-card .price {
+    font-size: 1rem;
+    color: #b0b3b8;
+    margin-bottom: 8px;
+}
+
+.menu-card .details {
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    margin-bottom: 20px;
+}
+
+/* Action Button inside Cards */
+.card-btn {
+    background-color: #4b51cc; /* Purple action button */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s ease;
+}
+
+.card-btn:hover {
+    background-color: #3b40a3;
+}
