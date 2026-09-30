@@ -6,12 +6,10 @@ import { useFetch } from "../hooks/useFetch";
 
 function MenuPage() {
 
-  const { data: dishes, isLoading, error } = useFetch("/menu.json");
-
-
+  // New dynamic look:
+  const API_BASE = import.meta.env.VITE_API_URL || "";
+  const { data: dishes, isLoading, error } = useFetch(`${API_BASE}/api/menu`);
   const [query, setQuery] = useState("");
-
-
   const debounced = useDebounce(query, 400);
 
 
